@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  schedulerName: my-scheduler   # 指定该pod的调度器
+  containers:
+    - name: nginx
+      image: nginx:1.10
